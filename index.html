@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Municipios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white: #ffffff;
+      --ink: #1a1a1a;
+      --muted: #7a7a7a;
+      --border: #e2e2e2;
+      --accent: #2d5a3d;
+      --accent-light: #e8f0eb;
+      --shadow: 0 2px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 40px rgba(0,0,0,0.14);
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    /* ── Hero / search area ── */
+    .hero {
+      width: 100%;
+      max-width: 680px;
+      text-align: center;
+      padding: 80px 0 48px;
+      transition: padding 0.4s ease;
+    }
+    .hero.has-results {
+      padding: 40px 0 32px;
+    }
+
+    .site-title {
+      font-family: 'Crimson Pro', serif;
+      font-weight: 300;
+      font-size: clamp(28px, 5vw, 42px);
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 300;
+      margin-bottom: 36px;
+      letter-spacing: 0.2px;
+    }
+
+    /* ── Search box ── */
+    .search-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 56px 16px 22px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--ink);
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 50px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-shadow: var(--shadow);
+    }
+
+    .search-input::placeholder {
+      color: #b0b0b0;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-light), var(--shadow);
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .search-btn:hover {
+      background: #1e3d2a;
+      transform: translateY(-50%) scale(1.06);
+    }
+
+    .search-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ── Autocomplete suggestions ── */
+    .suggestions {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      z-index: 100;
+      display: none;
+    }
+
+    .suggestions.visible {
+      display: block;
+    }
+
+    .suggestion-item {
+      padding: 12px 22px;
+      font-size: 14px;
+      cursor: pointer;
+      color: var(--ink);
+      border-bottom: 1px solid #f0f0f0;
+      text-align: left;
+      transition: background 0.15s;
+    }
+
+    .suggestion-item:last-child { border-bottom: none; }
+    .suggestion-item:hover { background: var(--accent-light); }
+    .suggestion-item strong { color: var(--accent); font-weight: 500; }
+
+    /* ── Results ── */
+    .results-area {
+      width: 100%;
+      max-width: 680px;
+      padding-bottom: 60px;
+    }
+
+    .result-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      animation: fadeUp 0.35s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-card img {
+      width: 100%;
+      max-height: 440px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .result-meta {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .result-name {
+      font-family: 'Crimson Pro', serif;
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+
+    .result-badge {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* ── No result ── */
+    .no-result {
+      text-align: center;
+      padding: 48px 0;
+      color: var(--muted);
+      font-size: 15px;
+      animation: fadeUp 0.3s ease both;
+    }
+
+    .no-result span {
+      display: block;
+      font-family: 'Crimson Pro', serif;
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    /* ── Helper text ── */
+    .hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #c0c0c0;
+      text-align: center;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      .hero { padding: 56px 0 36px; }
+      .site-title { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero" id="hero">
+    <h1 class="site-title">Municipios</h1>
+    <p class="subtitle">Ingresa el nombre del municipio</p>
+
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search"
+        class="search-input"
+        placeholder="Ej: San Miguel, Santa Ana…"
+        autocomplete="off"
+        aria-label="Buscar municipio"
+      />
+      <button class="search-btn" id="btn" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      </button>
+      <div class="suggestions" id="suggestions"></div>
+    </div>
+    <p class="hint">Presiona Enter o haz clic en la lupa para buscar</p>
+  </div>
+
+  <div class="results-area" id="results"></div>
+
+  <script>
+    /* ─────────────────────────────────────────
+       DATOS — cargados desde data.json
+       Puedes editar data.json sin tocar el HTML.
+    ───────────────────────────────────────── */
+    let municipios = [];
+
+    async function loadData() {
+      try {
+        const res = await fetch('data.json');
+        municipios = await res.json();
+      } catch (e) {
+        console.warn('No se encontró data.json. Usando datos de ejemplo.');
+        // Datos de demo (para prueba local sin servidor)
+        municipios = DEMO_DATA;
+      }
+    }
+
+    /* ─── Demo data (se reemplaza con data.json en producción) ─── */
+    const DEMO_DATA = [
+      { "municipio": "San Miguel",         "imagen": "images/san-miguel.jpg" },
+      { "municipio": "Santa Ana",          "imagen": "images/santa-ana.jpg" },
+      { "municipio": "Sonsonate",          "imagen": "images/sonsonate.jpg" },
+      { "municipio": "San Salvador",       "imagen": "images/san-salvador.jpg" },
+      { "municipio": "Usulután",           "imagen": "images/usulutan.jpg" },
+      { "municipio": "Chalatenango",       "imagen": "images/chalatenango.jpg" },
+      { "municipio": "La Unión",           "imagen": "images/la-union.jpg" },
+      { "municipio": "Ahuachapán",         "imagen": "images/ahuachapan.jpg" },
+      { "municipio": "Cuscatlán",          "imagen": "images/cuscatlan.jpg" },
+      { "municipio": "La Libertad",        "imagen": "images/la-libertad.jpg" }
+    ];
+
+    /* ─── Búsqueda ─── */
+    const searchInput = document.getElementById('search');
+    const suggestionsBox = document.getElementById('suggestions');
+    const resultsArea = document.getElementById('results');
+    const hero = document.getElementById('hero');
+
+    function normalize(str) {
+      return str.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function search(query) {
+      if (!query.trim()) { resultsArea.innerHTML = ''; return; }
+      const q = normalize(query.trim());
+      const match = municipios.find(m => normalize(m.municipio) === q) ||
+                    municipios.find(m => normalize(m.municipio).includes(q));
+
+      hero.classList.add('has-results');
+      suggestionsBox.classList.remove('visible');
+      suggestionsBox.innerHTML = '';
+
+      if (match) {
+        resultsArea.innerHTML = `
+          <div class="result-card">
+            <img src="${match.imagen}" alt="${match.municipio}" loading="lazy"
+                 onerror="this.src='https://placehold.co/680x440/e8f0eb/2d5a3d?text=${encodeURIComponent(match.municipio)}'"/>
+            <div class="result-meta">
+              <span class="result-name">${match.municipio}</span>
+              <span class="result-badge">Municipio</span>
+            </div>
+          </div>`;
+      } else {
+        resultsArea.innerHTML = `
+          <div class="no-result">
+            <span>Sin resultados</span>
+            No se encontró "<em>${query}</em>" — revisa la ortografía.
+          </div>`;
+      }
+    }
+
+    /* ─── Sugerencias mientras se escribe ─── */
+    searchInput.addEventListener('input', () => {
+      const q = normalize(searchInput.value.trim());
+      if (q.length < 2) { suggestionsBox.classList.remove('visible'); return; }
+
+      const matches = municipios.filter(m => normalize(m.municipio).includes(q)).slice(0, 6);
+
+      if (!matches.length) { suggestionsBox.classList.remove('visible'); return; }
+
+      suggestionsBox.innerHTML = matches.map(m => {
+        const name = m.municipio;
+        const highlighted = name.replace(new RegExp(`(${searchInput.value.trim()})`, 'gi'),
+          '<strong>$1</strong>');
+        return `<div class="suggestion-item" data-name="${name}">${highlighted}</div>`;
+      }).join('');
+
+      suggestionsBox.classList.add('visible');
+    });
+
+    suggestionsBox.addEventListener('click', e => {
+      const item = e.target.closest('.suggestion-item');
+      if (!item) return;
+      searchInput.value = item.dataset.name;
+      search(item.dataset.name);
+    });
+
+    /* ─── Triggers de búsqueda ─── */
+    document.getElementById('btn').addEventListener('click', () => search(searchInput.value));
+    searchInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') search(searchInput.value);
+    });
+
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.search-wrap')) {
+        suggestionsBox.classList.remove('visible');
+      }
+    });
+
+    /* ─── Init ─── */
+    loadData();
+  </script>
+</body>
+</html>

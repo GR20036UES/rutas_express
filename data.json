@@ -1,0 +1,12 @@
+[
+  { "municipio": "San Miguel",         "imagen": "images/p1.jpeg" },
+  { "municipio": "Santa Ana",          "imagen": "images/p2.jpeg" },
+  { "municipio": "Sonsonate",          "imagen": "images/sonsonate.jpg" },
+  { "municipio": "San Salvador",       "imagen": "images/san-salvador.jpg" },
+  { "municipio": "Usulután",           "imagen": "images/usulutan.jpg" },
+  { "municipio": "Chalatenango",       "imagen": "images/chalatenango.jpg" },
+  { "municipio": "La Unión",           "imagen": "images/la-union.jpg" },
+  { "municipio": "Ahuachapán",         "imagen": "images/ahuachapan.jpg" },
+  { "municipio": "Cuscatlán",          "imagen": "images/cuscatlan.jpg" },
+  { "municipio": "La Libertad",        "imagen": "images/la-libertad.jpg" }
+]
