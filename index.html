@@ -376,13 +376,13 @@
               <span class="result-badge">Municipio</span>
             </div>
             <div class="share-bar">
-              <button class="messenger-btn" onclick="shareMessenger('${imageUrl}')">
+              <button class="messenger-btn" onclick="shareMessenger('${imageUrl}', '${match.municipio}')">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
                 </svg>
                 Enviar por Messenger
               </button>
-              <span class="share-copied" id="copied-hint">¡Enlace copiado!</span>
+              <span class="share-copied" id="copied-hint"></span>
             </div>
           </div>`;
       } else {
@@ -432,27 +432,45 @@
       }
     });
 
-    /* ─── Compartir por Messenger ─── */
-    function shareMessenger(imageUrl) {
-      // En móvil: abre Messenger directamente
-      // En escritorio: usa Web Share API o copia el enlace
-      if (navigator.share) {
-        navigator.share({ url: imageUrl }).catch(() => {});
-      } else {
-        // Fallback: intenta abrir Messenger (funciona en móvil con app instalada)
-        const deepLink = `fb-messenger://share?link=${encodeURIComponent(imageUrl)}`;
-        window.location.href = deepLink;
+    /* ─── Compartir imagen real por menú nativo ─── */
+    async function shareMessenger(imageUrl, municipioName) {
+      const btn = document.querySelector('.messenger-btn');
 
-        // Si después de 1.5s no redirigió (escritorio), copia el enlace
-        setTimeout(() => {
-          navigator.clipboard.writeText(imageUrl).then(() => {
-            const hint = document.getElementById('copied-hint');
-            if (hint) {
-              hint.classList.add('visible');
-              setTimeout(() => hint.classList.remove('visible'), 2500);
-            }
-          }).catch(() => {});
-        }, 1500);
+      try {
+        // Descarga la imagen como blob
+        btn.textContent = 'Cargando imagen…';
+        btn.disabled = true;
+
+        const response = await fetch(imageUrl);
+        const blob = await response.blob();
+        const ext = blob.type.includes('png') ? 'png' : 'jpg';
+        const file = new File([blob], `${municipioName}.${ext}`, { type: blob.type });
+
+        btn.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;flex-shrink:0">
+            <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
+          </svg>
+          Enviar por Messenger`;
+        btn.disabled = false;
+
+        // Abre el menú nativo con el archivo real
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({
+            files: [file],
+            title: municipioName
+          });
+        } else {
+          // Fallback: comparte la URL si el dispositivo no soporta archivos
+          await navigator.share({ url: imageUrl, title: municipioName });
+        }
+
+      } catch (err) {
+        btn.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;flex-shrink:0">
+            <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
+          </svg>
+          Enviar por Messenger`;
+        btn.disabled = false;
       }
     }
 
