@@ -1,7 +1,7 @@
 [
   { "municipio": "Acajutla",           "imagen": "images/ACAJUTLA.jpg" },
   { "municipio": "Agua Caliente",      "imagen": "images/AGUA_CALIENTE.jpg" },
-  { "municipio": "Aguilares",          "imagen": "images/AGUILARES AGENCIA.jpg" },
+  { "municipio": "Acajutla",          "imagen": "images/AGUILARES AGENCIA.jpg" },
   { "municipio": "Ahuachapán",         "imagen": "images/AHUACHAPAN AGENCIA.jpg" },
   { "municipio": "Alegria",            "imagen": "images/ALEGRIA.jpg" },
   { "municipio": "Altavista",          "imagen": "images/ALTAVISTA AGENCIA.png" },
