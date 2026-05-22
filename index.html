@@ -17,7 +17,6 @@
       --accent: #2d5a3d;
       --accent-light: #e8f0eb;
       --shadow: 0 2px 20px rgba(0,0,0,0.08);
-      --shadow-hover: 0 8px 40px rgba(0,0,0,0.14);
       --radius: 12px;
     }
 
@@ -32,17 +31,15 @@
       padding: 0 20px;
     }
 
-    /* ── Hero / search area ── */
+    /* ── Hero ── */
     .hero {
       width: 100%;
-      max-width: 680px;
+      max-width: 720px;
       text-align: center;
       padding: 80px 0 48px;
       transition: padding 0.4s ease;
     }
-    .hero.has-results {
-      padding: 40px 0 32px;
-    }
+    .hero.has-results { padding: 40px 0 32px; }
 
     .site-title {
       font-family: 'Crimson Pro', serif;
@@ -58,14 +55,10 @@
       color: var(--muted);
       font-weight: 300;
       margin-bottom: 36px;
-      letter-spacing: 0.2px;
     }
 
-    /* ── Search box ── */
-    .search-wrap {
-      position: relative;
-      width: 100%;
-    }
+    /* ── Search ── */
+    .search-wrap { position: relative; width: 100%; }
 
     .search-input {
       width: 100%;
@@ -81,11 +74,7 @@
       transition: border-color 0.2s, box-shadow 0.2s;
       box-shadow: var(--shadow);
     }
-
-    .search-input::placeholder {
-      color: #b0b0b0;
-    }
-
+    .search-input::placeholder { color: #b0b0b0; }
     .search-input:focus {
       border-color: var(--accent);
       box-shadow: 0 0 0 4px var(--accent-light), var(--shadow);
@@ -93,165 +82,148 @@
 
     .search-btn {
       position: absolute;
-      right: 8px;
-      top: 50%;
+      right: 8px; top: 50%;
       transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
+      width: 40px; height: 40px;
       border-radius: 50%;
       background: var(--accent);
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
       transition: background 0.2s, transform 0.15s;
     }
-
-    .search-btn:hover {
-      background: #1e3d2a;
-      transform: translateY(-50%) scale(1.06);
-    }
-
+    .search-btn:hover { background: #1e3d2a; transform: translateY(-50%) scale(1.06); }
     .search-btn svg {
-      width: 18px;
-      height: 18px;
-      stroke: #fff;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      width: 18px; height: 18px;
+      stroke: #fff; fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
     }
 
-    /* ── Autocomplete suggestions ── */
+    /* ── Suggestions ── */
     .suggestions {
       position: absolute;
-      top: calc(100% + 6px);
-      left: 0;
-      right: 0;
+      top: calc(100% + 6px); left: 0; right: 0;
       background: var(--white);
       border: 1.5px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow: hidden;
-      z-index: 100;
-      display: none;
+      overflow: hidden; z-index: 100; display: none;
     }
-
-    .suggestions.visible {
-      display: block;
-    }
-
+    .suggestions.visible { display: block; }
     .suggestion-item {
-      padding: 12px 22px;
-      font-size: 14px;
-      cursor: pointer;
-      color: var(--ink);
-      border-bottom: 1px solid #f0f0f0;
-      text-align: left;
-      transition: background 0.15s;
+      padding: 12px 22px; font-size: 14px; cursor: pointer;
+      color: var(--ink); border-bottom: 1px solid #f0f0f0;
+      text-align: left; transition: background 0.15s;
     }
-
     .suggestion-item:last-child { border-bottom: none; }
     .suggestion-item:hover { background: var(--accent-light); }
     .suggestion-item strong { color: var(--accent); font-weight: 500; }
 
-    /* ── Results ── */
+    .hint { margin-top: 10px; font-size: 12px; color: #c0c0c0; text-align: center; }
+
+    /* ── Results area ── */
     .results-area {
       width: 100%;
-      max-width: 680px;
+      max-width: 720px;
       padding-bottom: 60px;
     }
 
-    .result-card {
+    /* ── Municipio header ── */
+    .municipio-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 20px;
+      animation: fadeUp 0.3s ease both;
+    }
+    .municipio-header h2 {
+      font-family: 'Crimson Pro', serif;
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: -0.3px;
+    }
+    .municipio-count {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    /* ── Grid de encomendistas ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 400px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Tarjeta individual ── */
+    .enc-card {
       background: var(--white);
       border: 1.5px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
       animation: fadeUp 0.35s ease both;
+      display: flex;
+      flex-direction: column;
     }
 
+    .enc-card:nth-child(2) { animation-delay: 0.05s; }
+    .enc-card:nth-child(3) { animation-delay: 0.10s; }
+    .enc-card:nth-child(4) { animation-delay: 0.15s; }
+    .enc-card:nth-child(n+5) { animation-delay: 0.18s; }
+
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
+      from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .result-card img {
+    .enc-card img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .result-meta {
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .result-name {
-      font-family: 'Crimson Pro', serif;
-      font-size: 26px;
-      font-weight: 400;
-      letter-spacing: -0.3px;
-    }
-
-    .result-badge {
-      font-size: 11px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 4px 12px;
-      border-radius: 20px;
-    }
-
-    /* ── Messenger button ── */
-    .share-bar {
-      padding: 16px 24px;
+    .enc-meta {
+      padding: 12px 14px;
       border-top: 1px solid var(--border);
     }
 
+    .enc-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── Botón compartir ── */
     .messenger-btn {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 11px 22px;
+      justify-content: center;
+      gap: 7px;
+      width: 100%;
+      padding: 9px 14px;
       background: #0099ff;
       color: #fff;
       font-family: 'DM Sans', sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       border: none;
       border-radius: 50px;
       cursor: pointer;
       transition: background 0.2s, transform 0.15s;
-      text-decoration: none;
     }
+    .messenger-btn:hover { background: #0077cc; transform: scale(1.03); }
+    .messenger-btn:disabled { background: #80c8ff; cursor: wait; }
+    .messenger-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 
-    .messenger-btn:hover {
-      background: #0077cc;
-      transform: scale(1.03);
-    }
-
-    .messenger-btn svg {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-
-    .share-copied {
-      display: inline-block;
-      margin-left: 12px;
-      font-size: 12px;
-      color: var(--accent);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .share-copied.visible { opacity: 1; }
+    /* ── Sin resultados ── */
     .no-result {
       text-align: center;
       padding: 48px 0;
@@ -259,7 +231,6 @@
       font-size: 15px;
       animation: fadeUp 0.3s ease both;
     }
-
     .no-result span {
       display: block;
       font-family: 'Crimson Pro', serif;
@@ -269,15 +240,6 @@
       margin-bottom: 6px;
     }
 
-    /* ── Helper text ── */
-    .hint {
-      margin-top: 10px;
-      font-size: 12px;
-      color: #c0c0c0;
-      text-align: center;
-    }
-
-    /* ── Responsive ── */
     @media (max-width: 500px) {
       .hero { padding: 56px 0 36px; }
       .site-title { font-size: 28px; }
@@ -295,7 +257,7 @@
         type="text"
         id="search"
         class="search-input"
-        placeholder="Ej: San Miguel, Santa Ana…"
+        placeholder="Ej: Acajutla, Santa Ana…"
         autocomplete="off"
         aria-label="Buscar municipio"
       />
@@ -304,16 +266,12 @@
       </button>
       <div class="suggestions" id="suggestions"></div>
     </div>
-    <p class="hint">Presiona Enter o haz clic en la lupa para buscar</p>
+    <p class="hint">Presiona Enter o toca la lupa para buscar</p>
   </div>
 
   <div class="results-area" id="results"></div>
 
   <script>
-    /* ─────────────────────────────────────────
-       DATOS — cargados desde data.json
-       Puedes editar data.json sin tocar el HTML.
-    ───────────────────────────────────────── */
     let municipios = [];
 
     async function loadData() {
@@ -321,37 +279,27 @@
         const res = await fetch('data.json');
         municipios = await res.json();
       } catch (e) {
-        console.warn('No se encontró data.json. Usando datos de ejemplo.');
-        // Datos de demo (para prueba local sin servidor)
+        console.warn('No se encontró data.json. Usando datos de demo.');
         municipios = DEMO_DATA;
       }
     }
 
-    /* ─── Demo data (se reemplaza con data.json en producción) ─── */
-    const DEMO_DATA = [
-      { "municipio": "San Miguel",         "imagen": "images/san-miguel.jpg" },
-      { "municipio": "Santa Ana",          "imagen": "images/santa-ana.jpg" },
-      { "municipio": "Sonsonate",          "imagen": "images/sonsonate.jpg" },
-      { "municipio": "San Salvador",       "imagen": "images/san-salvador.jpg" },
-      { "municipio": "Usulután",           "imagen": "images/usulutan.jpg" },
-      { "municipio": "Chalatenango",       "imagen": "images/chalatenango.jpg" },
-      { "municipio": "La Unión",           "imagen": "images/la-union.jpg" },
-      { "municipio": "Ahuachapán",         "imagen": "images/ahuachapan.jpg" },
-      { "municipio": "Cuscatlán",          "imagen": "images/cuscatlan.jpg" },
-      { "municipio": "La Libertad",        "imagen": "images/la-libertad.jpg" }
-    ];
-
-    /* ─── Búsqueda ─── */
-    const searchInput = document.getElementById('search');
+    /* ─── UI refs ─── */
+    const searchInput   = document.getElementById('search');
     const suggestionsBox = document.getElementById('suggestions');
-    const resultsArea = document.getElementById('results');
-    const hero = document.getElementById('hero');
+    const resultsArea   = document.getElementById('results');
+    const hero          = document.getElementById('hero');
 
     function normalize(str) {
-      return str.toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     }
 
+    /* ─── Icono Messenger ─── */
+    const MESSENGER_ICON = `<svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
+    </svg>`;
+
+    /* ─── Render resultado ─── */
     function search(query) {
       if (!query.trim()) { resultsArea.innerHTML = ''; return; }
       const q = normalize(query.trim());
@@ -362,52 +310,82 @@
       suggestionsBox.classList.remove('visible');
       suggestionsBox.innerHTML = '';
 
-      if (match) {
-        const imageUrl = new URL(match.imagen, window.location.href).href;
-        const messengerUrl = `fb-messenger://share?link=${encodeURIComponent(imageUrl)}`;
-        const fbSendUrl = `https://www.facebook.com/dialog/send?link=${encodeURIComponent(imageUrl)}&app_id=YOUR_APP_ID&redirect_uri=${encodeURIComponent(window.location.href)}`;
-
-        resultsArea.innerHTML = `
-          <div class="result-card">
-            <img src="${match.imagen}" alt="${match.municipio}" loading="lazy"
-                 onerror="this.src='https://placehold.co/680x440/e8f0eb/2d5a3d?text=${encodeURIComponent(match.municipio)}'"/>
-            <div class="result-meta">
-              <span class="result-name">${match.municipio}</span>
-              <span class="result-badge">Municipio</span>
-            </div>
-            <div class="share-bar">
-              <button class="messenger-btn" onclick="shareMessenger('${imageUrl}', '${match.municipio}')">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
-                </svg>
-                Enviar por Messenger
-              </button>
-              <span class="share-copied" id="copied-hint"></span>
-            </div>
-          </div>`;
-      } else {
+      if (!match) {
         resultsArea.innerHTML = `
           <div class="no-result">
             <span>Sin resultados</span>
             No se encontró "<em>${query}</em>" — revisa la ortografía.
           </div>`;
+        return;
+      }
+
+      const enc = match.encomendistas || [];
+      const count = enc.length;
+      const label = count === 1 ? '1 encomendista' : `${count} encomendistas`;
+
+      const cards = enc.map((e, i) => {
+        const imageUrl = new URL(e.imagen, window.location.href).href;
+        const safeName = e.nombre.replace(/'/g, "\\'");
+        return `
+          <div class="enc-card">
+            <img src="${e.imagen}" alt="${e.nombre}" loading="lazy"
+                 onerror="this.src='https://placehold.co/400x400/e8f0eb/2d5a3d?text=${encodeURIComponent(e.nombre)}'"/>
+            <div class="enc-meta">
+              <div class="enc-name">${e.nombre}</div>
+              <button class="messenger-btn" onclick="shareImage('${imageUrl}', '${safeName}', this)">
+                ${MESSENGER_ICON}
+                Enviar
+              </button>
+            </div>
+          </div>`;
+      }).join('');
+
+      resultsArea.innerHTML = `
+        <div class="municipio-header">
+          <h2>${match.municipio}</h2>
+          <span class="municipio-count">${label}</span>
+        </div>
+        <div class="grid">${cards}</div>`;
+    }
+
+    /* ─── Compartir imagen real ─── */
+    async function shareImage(imageUrl, nombre, btn) {
+      try {
+        btn.disabled = true;
+        btn.innerHTML = `${MESSENGER_ICON} Cargando…`;
+
+        const response = await fetch(imageUrl);
+        const blob = await response.blob();
+        const ext = blob.type.includes('png') ? 'png' : 'jpg';
+        const file = new File([blob], `${nombre}.${ext}`, { type: blob.type });
+
+        btn.innerHTML = `${MESSENGER_ICON} Enviar`;
+        btn.disabled = false;
+
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], title: nombre });
+        } else {
+          await navigator.share({ url: imageUrl, title: nombre });
+        }
+      } catch (err) {
+        btn.innerHTML = `${MESSENGER_ICON} Enviar`;
+        btn.disabled = false;
       }
     }
 
-    /* ─── Sugerencias mientras se escribe ─── */
+    /* ─── Sugerencias ─── */
     searchInput.addEventListener('input', () => {
       const q = normalize(searchInput.value.trim());
       if (q.length < 2) { suggestionsBox.classList.remove('visible'); return; }
 
       const matches = municipios.filter(m => normalize(m.municipio).includes(q)).slice(0, 6);
-
       if (!matches.length) { suggestionsBox.classList.remove('visible'); return; }
 
       suggestionsBox.innerHTML = matches.map(m => {
-        const name = m.municipio;
-        const highlighted = name.replace(new RegExp(`(${searchInput.value.trim()})`, 'gi'),
-          '<strong>$1</strong>');
-        return `<div class="suggestion-item" data-name="${name}">${highlighted}</div>`;
+        const highlighted = m.municipio.replace(
+          new RegExp(`(${searchInput.value.trim()})`, 'gi'), '<strong>$1</strong>'
+        );
+        return `<div class="suggestion-item" data-name="${m.municipio}">${highlighted}</div>`;
       }).join('');
 
       suggestionsBox.classList.add('visible');
@@ -420,61 +398,12 @@
       search(item.dataset.name);
     });
 
-    /* ─── Triggers de búsqueda ─── */
     document.getElementById('btn').addEventListener('click', () => search(searchInput.value));
-    searchInput.addEventListener('keydown', e => {
-      if (e.key === 'Enter') search(searchInput.value);
-    });
-
+    searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') search(searchInput.value); });
     document.addEventListener('click', e => {
-      if (!e.target.closest('.search-wrap')) {
-        suggestionsBox.classList.remove('visible');
-      }
+      if (!e.target.closest('.search-wrap')) suggestionsBox.classList.remove('visible');
     });
 
-    /* ─── Compartir imagen real por menú nativo ─── */
-    async function shareMessenger(imageUrl, municipioName) {
-      const btn = document.querySelector('.messenger-btn');
-
-      try {
-        // Descarga la imagen como blob
-        btn.textContent = 'Cargando imagen…';
-        btn.disabled = true;
-
-        const response = await fetch(imageUrl);
-        const blob = await response.blob();
-        const ext = blob.type.includes('png') ? 'png' : 'jpg';
-        const file = new File([blob], `${municipioName}.${ext}`, { type: blob.type });
-
-        btn.innerHTML = `
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;flex-shrink:0">
-            <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
-          </svg>
-          Enviar por Messenger`;
-        btn.disabled = false;
-
-        // Abre el menú nativo con el archivo real
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({
-            files: [file],
-            title: municipioName
-          });
-        } else {
-          // Fallback: comparte la URL si el dispositivo no soporta archivos
-          await navigator.share({ url: imageUrl, title: municipioName });
-        }
-
-      } catch (err) {
-        btn.innerHTML = `
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;flex-shrink:0">
-            <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.955 1.42 5.59 3.641 7.337V22l3.33-1.83c.89.247 1.833.38 2.029.38 5.523 0 10-4.144 10-9.307C21 6.145 17.523 2 12 2zm1.007 12.533l-2.548-2.718-4.972 2.718 5.476-5.813 2.61 2.718 4.91-2.718-5.476 5.813z"/>
-          </svg>
-          Enviar por Messenger`;
-        btn.disabled = false;
-      }
-    }
-
-    /* ─── Init ─── */
     loadData();
   </script>
 </body>
