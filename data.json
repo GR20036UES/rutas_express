@@ -4,17 +4,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen":"images/PEDIDOS_EXPRESS/ACAJUTLA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ACAJUTLA.jpg" 
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ACAJUTLA.jpg" 
-      },{
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ACAJUTLA2.jpg" 
       }
     ]
   },          
@@ -31,14 +20,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/AGUILARES AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/AGUILARES.jpg" 
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/AGUILARES.jpg" 
       }
     ]
   },
@@ -47,14 +28,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/AHUACHAPAN AGENCIA.jpg" 
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/AHUACHAPAN.jpg" 
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/AHUACHAPAN.jpg" 
       }
     ]
   },
@@ -63,13 +36,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ALEGRIA.jpg" 
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ALEGRIA.jpg" 
-      },{
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ALEGRIA.jpg" 
       }
     ]
   },
@@ -86,14 +52,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ANAMOROS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ANAMOROS.jpg" 
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ANAMOROS.jpg" 
       }
     ]
   },
@@ -101,7 +59,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/ANTIGUO CUSCATLAN.jpg"
+        "imagen": "images/PEDIDOS_EXPRESS/ANTIGUO CUSCATLAN AGENCIA.jpg"
       }
     ]
   },
@@ -110,10 +68,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/APANECA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/APANECA.jpg" 
       }
     ]
   },
@@ -122,10 +76,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/APASTEPEQUE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/APASTEPEQUE.jpg" 
       }
     ]
   },
@@ -134,14 +84,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/APOPA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/APOPA.jpg" 
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/APOPA.jpg" 
       }
     ]
   },
@@ -150,10 +92,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ARAMBALA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ARAMBALA.jpg"
       }
     ]
   },
@@ -162,10 +100,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ARMENIA AGENCIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ARMENIA.jpg" 
       }
     ]
   },
@@ -174,10 +108,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ATACO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CONCEPCION ATACO.jpg" 
       }
     ]
   },
@@ -187,20 +117,13 @@
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ATEOS.jpg"
       }
-    ]               },
+    ]               
+  },
   { "municipio": "Atiquizaya",
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ATIQUIZAYA AGENCIA.png"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ATIQUIZAYA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ATIQUIZAYA.jpg" 
       }
     ]
   },
@@ -209,14 +132,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/BERLIN AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/BERLIN.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/BERLIN.jpg" 
       }
     ]
   },
@@ -225,10 +140,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/BOLIVAR.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/BOLIVAR.jpg"
       }
     ]
   },
@@ -237,10 +148,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CACAOPERA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CACAOPERA.jpg"
       }
     ]
   },
@@ -260,27 +167,11 @@
       }
     ]
   },
-  { "municipio": "Carolina",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CAROLINA.jpg"
-      }
-    ]
-  },
   { "municipio": "Chalatenango",
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHALATENANGO AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHALATENANGO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CHALATENANGO.jpg" 
       }
     ]
   },
@@ -289,14 +180,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHALCHUAPA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHALCHUAPA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CHALCHUAPA.jpg"
       }
     ]
   },
@@ -305,14 +188,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHAPELTIQUE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHAPELTIQUE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CHAPELTIQUE.jpg" 
       }
     ]
   },
@@ -321,10 +196,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHILANGA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHILANGA.jpg"
       }
     ]
   },
@@ -333,14 +204,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHINAMECA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHINAMECA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CHINAMECA.jpg" 
       }
     ]
   },
@@ -349,14 +212,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CHIRILAGUA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CHIRILAGUA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CHIRILAGUA.jpg" 
       }
     ]
   },
@@ -372,15 +227,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/CIUDAD BARRIOS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CIUDAD BARRIOS.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CIUDAD BARRIOS.jpg" 
+        "imagen": "images/PEDIDOS_EXPRESS/CIUDAD BARRIOS AGENCIA.jpg"
       }
     ]
   },
@@ -389,18 +236,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CIUDAD DELGADO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CIUDAD DELGADO.jpg"
-      }
-    ]
-  },
-  { "municipio": "Ciudad Dolores",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CIUDAD DOLORES.jpg"
       }
     ]
   },
@@ -409,14 +244,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CIUDAD EL TRIUNFO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CIUDAD EL TRIUNFO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CIUDAD EL TRIUNFO.jpg" 
       }
     ]
   },
@@ -433,14 +260,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CIUDAD REAL.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CIUDAD REAL.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CIUDAD REAL.jpg" 
       }
     ]
   },
@@ -465,14 +284,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/COJUTEPEQUE AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/COJUTEPEQUE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/COJUTEPEQUE.jpg" 
       }
     ]
   },
@@ -481,18 +292,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/COMACARAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/COMACARAN.jpg"
-      }
-    ]
-  },
-  { "municipio": "Comalapa",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/COMALAPA.jpg"
       }
     ]
   },
@@ -501,10 +300,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CONCEPCION BATRES.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CONCEPCION BATRES.jpg"
       }
     ]
   },
@@ -513,10 +308,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CONCEPCION DE ORIENTE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CONCEPCION DE ORIENTE.jpg"
       }
     ]
   },
@@ -533,22 +324,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/CORINTO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/CORINTO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/CORINTO.jpg" 
-      }
-    ]
-  },
-  { "municipio": "Costa del Sol",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/COSTA DEL SOL.jpg"
       }
     ]
   },
@@ -557,22 +332,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/DELICIAS DE CONCEPCION.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/DELICIAS DE CONCEPCION.jpg"
-      }
-    ]
-  },
-  { "municipio": "Desvio de Amayo",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/DESVIO DE AMAYO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/DESVIO DE AMAYO.jpg" 
       }
     ]
   },
@@ -581,18 +340,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/DESVIO DE OPICO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/DESVIO DE OPICO.jpg"
-      }
-    ]
-  },
-  { "municipio": "Desvio los Mangos",
-    "encomendistas": [
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/DESVIO LOS MANGOS.jpg"
       }
     ]
   },
@@ -609,14 +356,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL AMATILLO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL AMATILLO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/FRONTERA EL AMATILLO.jpg"
       }
     ]
   },
@@ -625,14 +364,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL CARMEN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL CARMEN.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/EL CARMEN.jpg"
       }
     ]
   },
@@ -649,26 +380,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL DIVISADERO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL DIVISADERO.jpg"
-      }
-    ]
-  },
-  { "municipio": "El Espino",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL ESPINO.jpg"
-      }
-    ]
-  },
-  { "municipio": "El Jaguey",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL JAGUEY.jpg"
       }
     ]
   },
@@ -677,10 +388,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL PARAISO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL PARAISO.jpg"
       }
     ]
   },
@@ -689,10 +396,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL REFUGIO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL REFUGIO.jpg"
       }
     ]
   },
@@ -701,10 +404,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL ROSARIO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL ROSARIO.jpg"
       }
     ]
   },
@@ -713,10 +412,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL SAUCE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL SAUCE.jpg"
       }
     ]
   },
@@ -725,14 +420,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EL TRANSITO AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL TRANSITO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/EL TRANSITO.jpg"
       }
     ]
   },
@@ -741,10 +428,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/EREGUAYQUIN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EREGUAYQUIN.jpg"
       }
     ]
   },
@@ -753,10 +436,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ESTANZUELAS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ESTANZUELAS.jpg"
       }
     ]
   },
@@ -765,10 +444,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/GUALOCOCTI.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/GUALOCOCTI.jpg"
       }
     ]
   },
@@ -777,14 +452,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/GUATAJIAGUA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/GUATAJIAGUA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/GUATAJIAGUA.jpg"
       }
     ]
   },
@@ -793,10 +460,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/GUAYMANGO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/GUAYMANGO.jpg"
       }
     ]
   },
@@ -805,10 +468,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/GUAZAPA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/GUAZAPA.jpg"
       }
     ]
   },
@@ -825,14 +484,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ILOBASCO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ILOBASCO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ILOBASCO.jpg"
       }
     ]
   },
@@ -849,14 +500,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/INTIPUCA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/INTIPUCA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/INTIPUCA.jpg"
       }
     ]
   },
@@ -865,14 +508,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/IZALCO AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/IZALCO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/IZALCO.jpg"
       }
     ]
   },
@@ -881,14 +516,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JIQUILISCO AGENCIA.jpg"
-      },
-      {
-      "nombre":"V&G",
-      "imagen": "images/V y G/JIQUILISCO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/JIQUILISCO.jpg"
       }
     ]
   },
@@ -897,10 +524,6 @@
       {
       "nombre":"Pedidos Express",
       "imagen": "images/PEDIDOS_EXPRESS/JOCOAITIQUE.jpg"
-      },
-      {
-      "nombre":"V&G",
-      "imagen": "images/V y G/JOCOAITIQUE.jpg"
       }
     ]
   },
@@ -909,14 +532,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JOCORO.jpg"
-      },
-      {
-      "nombre":"V&G",
-      "imagen": "images/V y G/JOCORO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/JOCORO.jpg"
       }
     ]
   },
@@ -925,10 +540,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JUAYUA AGENCIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/JUAYUA.jpg"
       }
     ]
   },
@@ -937,14 +548,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JUCUAPA.jpg"
-      },
-      {
-      "nombre":"V&G",
-      "imagen": "images/V y G/JUCUAPA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/JUCUAPA.jpg"
       }
     ]
   },
@@ -953,10 +556,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JUCUARAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/JUCUARAN.jpg"
       }
     ]
   },
@@ -965,10 +564,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/JUJUTLA.jpg"
-      },
-      {
-      "nombre":"V&G",
-      "imagen": "images/V y G/JUJUTLA.jpg"
       }
     ]
   },
@@ -993,22 +588,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LA UNION AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/LA UNION.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/LA UNION.jpg"
-      }
-    ]
-  },
-  { "municipio": "Laguna de Olomega",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/LAGUNA DE OLOMEGA.jpg"
       }
     ]
   },
@@ -1017,10 +596,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LISLIQUE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/LISLIQUE.jpg"
       }
     ]
   },
@@ -1029,14 +604,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LOLOTIQUE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/LOLOTIQUE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/LOLOTIQUE.jpg"
       }
     ]
   },
@@ -1045,10 +612,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LOLOTIQUILLO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/LOLOTIQUILLO.jpg"
       }
     ]
   },
@@ -1065,29 +628,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LOURDES AGENCIA.jpg"
-      },{
-        "nombre":"V&G",
-        "imagen": "images/V y G/METROLOURDES.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/LOURDES METROCENTRO.jpg"
-      }
-    ]
-  },
-  { "municipio": "Meanguera",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/MEANGUERA.jpg"
-      }
-    ]
-  },
-  { "municipio": "Mejicanos",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/MEJICANOS.jpg"
       }
     ]
   },
@@ -1096,14 +636,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/MERCEDES UMAÑA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/MERCEDES UMAÑA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/MERCEDES UMAÑA.jpg"
       }
     ]
   },
@@ -1120,10 +652,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/METALIO AGENCIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/METALIO.jpg"
       }
     ]
   },
@@ -1132,10 +660,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/METAPAN AGENCIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/METAPAN.jpg"
       }
     ]
   },
@@ -1144,14 +668,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/MONCAGUA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/MONCAGUA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/MONCAGUA.jpg"
       }
     ]
   },
@@ -1168,10 +684,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NEJAPA AGENCIA.png"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NEJAPA.jpg"
       }
     ]
   },
@@ -1180,10 +692,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NUEVA CONCEPCION.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NUEVA CONCEPCION.jpg"
       }
     ]
   },
@@ -1192,14 +700,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NUEVA ESPARTA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NUEVA ESPARTA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/NUEVA ESPARTA.jpg"
       }
     ]
   },
@@ -1208,10 +708,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NUEVA GRANADA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NUEVA GRANADA.jpg"
       }
     ]
   },
@@ -1220,14 +716,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NUEVA GUADALUPE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NUEVA GUADALUPE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/NUEVA GUADALUPE.jpg"
       }
     ]
   },
@@ -1236,10 +724,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/NUEVO EDEN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/NUEVO EDEN DE SAN JUAN.jpg"
       }
     ]
   },
@@ -1264,14 +748,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/OSICALA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/OSICALA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/OSICALA.jpg"
       }
     ]
   },
@@ -1280,10 +756,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/OZATLAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/OZATLAN.jpg"
       }
     ]
   },
@@ -1300,14 +772,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PASAQUINA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PASAQUINA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PASAQUINA.jpg"
       }
     ]
   },
@@ -1324,10 +788,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PERQUIN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PERQUIN.jpg"
       }
     ]
   },
@@ -1344,14 +804,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PLAYA EL CUCO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/EL CUCO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PLAYA EL CUCO.jpg"
       }
     ]
   },
@@ -1363,27 +815,11 @@
       }
     ]
   },
-  { "municipio": "Playa las Tunas",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PLAYA LAS TUNAS.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PLAYA LAS TUNAS.jpg"
-      }
-    ]
-  },
   { "municipio": "Plaza don Yon",
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PLAZA DON YON.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PLAZA DON YON.jpg"
       }
     ]
   },
@@ -1408,14 +844,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/POLOROS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/POLOROS.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/POLOROS.jpg"
       }
     ]
   },
@@ -1424,14 +852,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PUERTO DE LA LIBERTAD.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PUERTO DE LA LIBERTAD.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PUERTO DE LA LIBERTAD.jpg"
       }
     ]
   },
@@ -1440,14 +860,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PUERTO EL TRIUNFO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PUERTO EL TRIUNFO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/PUERTO EL TRIUNFO.jpg"
       }
     ]
   },
@@ -1456,10 +868,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/PUERTO PARADA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/PUERTO PARADA.jpg"
       }
     ]
   },
@@ -1468,10 +876,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/QUELEPA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/QUELEPA.jpg"
       }
     ]
   },
@@ -1480,18 +884,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/QUEZALTEPEQUE AGENCIA.png"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/QUEZALTEPEQUE.jpg"
-      }
-    ]
-  },
-  { "municipio": "Sacacoyo",
-    "encomendistas": [
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SACACOYO.jpg"
       }
     ]
   },
@@ -1516,10 +908,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN ALEJO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN ALEJO.jpg"
       }
     ]
   },
@@ -1528,14 +916,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN ANTONIO PAJONAL.jpg"
-      }
-    ]
-  },
-  { "municipio": "San Antonio Silva",
-    "encomendistas": [
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN ANTONIO SILVA.jpg"
       }
     ]
   },
@@ -1560,10 +940,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN BUENAVENTURA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN BUENAVENTURA.jpg"
       }
     ]
   },
@@ -1572,10 +948,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN CARLOS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN CARLOS.jpg"
       }
     ]
   },
@@ -1592,14 +964,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN FRANCISCO GOTERA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN FRANCISCO GOTERA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN FRANCISCO GOTERA.jpg"
       }
     ]
   },
@@ -1608,10 +972,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN GERARDO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN GERARDO.jpg"
       }
     ]
   },
@@ -1620,10 +980,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN ILDEFONSO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN ILDEFONSO.jpg"
       }
     ]
   },
@@ -1640,14 +996,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN ISIDRO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN ISIDRO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN ISIDRO.jpg"
       }
     ]
   },
@@ -1656,14 +1004,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN JORGE.png"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN JORGE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN JORGE.jpg"
       }
     ]
   },
@@ -1672,18 +1012,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN JUAN NONUALCO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN JUAN NONUALCO.jpg"
-      }
-    ]
-  },
-  { "municipio": "San Juan Opico",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN JUAN OPICO.jpg"
       }
     ]
   },
@@ -1692,10 +1020,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN JUAN TALPA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN JUAN TALPA.jpg"
       }
     ]
   },
@@ -1704,14 +1028,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN JULIAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN JULIAN.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN JULIAN.jpg"
       }
     ]
   },
@@ -1720,18 +1036,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN LUIS DE LA REINA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN LUIS DE LA REINA.jpg"
-      }
-    ]
-  },
-  { "municipio": "San Luis la Herradura",
-    "encomendistas": [
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN LUIS LA HERRADURA.jpg"
       }
     ]
   },
@@ -1740,10 +1044,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN LUIS TALPA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN LUIS TALPA.jpg"
       }
     ]
   },
@@ -1755,19 +1055,19 @@
       }
     ]
   },
+  { "municipio": "San Marcos",
+    "encomendistas": [
+      {
+        "nombre":"Pedidos Express",
+        "imagen": "images/PEDIDOS_EXPRESS/SAN MARCOS AGENCIA.jpg"
+      }
+    ]
+  },
   { "municipio": "San Marcos Lempa",
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN MARCOS LEMPA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN MARCOS LEMPA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN MARCOS LEMPA.jpg"
       }
     ]
   },
@@ -1776,10 +1076,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN MARTIN AGENCIA.png"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN MARTIN.jpg"
       }
     ]
   },
@@ -1796,10 +1092,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN MIGUEL AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN MIGUEL.jpg"
       }
     ]
   },
@@ -1816,14 +1108,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN RAFAEL CEDROS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN RAFAEL CEDROS.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN RAFAEL CEDROS.jpg"
       }
     ]
   },
@@ -1832,10 +1116,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN RAFAEL OBRAJUELOS.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN RAFAEL OBRAJUELO.jpg"
       }
     ]
   },
@@ -1844,14 +1124,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN RAFAEL ORIENTE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN RAFAEL ORIENTE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN RAFAEL ORIENTE.jpg"
       }
     ]
   },
@@ -1884,10 +1156,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN SEBASTIAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN SEBASTIAN.jpg"
       }
     ]
   },
@@ -1896,10 +1164,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN SIMON.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN SIMON.jpg"
       }
     ]
   },
@@ -1908,14 +1172,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN VICENTE AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SAN VICENTE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SAN VICENTE.jpg"
       }
     ]
   },
@@ -1924,10 +1180,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTA ANA CENTRO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SANTA ANA.jpg"
       }
     ]
   },
@@ -1944,14 +1196,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTA ELENA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTA ELENA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SANTA ELENA.jpg"
       }
     ]
   },
@@ -1960,10 +1204,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTA MARIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTA MARIA.jpg"
       }
     ]
   },
@@ -1972,14 +1212,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTA ROSA DE LIMA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTA ROSA DE LIMA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SANTA ROSA DE LIMA.jpg"
       }
     ]
   },
@@ -1988,14 +1220,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTA TECLA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTA TECLA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SANTA TECLA.jpg"
       }
     ]
   },
@@ -2012,14 +1236,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTIAGO DE MARIA AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTIAGO DE MARIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SANTIAGO DE MARIA.jpg"
       }
     ]
   },
@@ -2028,10 +1244,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTIAGO NONUALCO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTIAGO NONUALCO.jpg"
       }
     ]
   },
@@ -2048,10 +1260,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SANTO DOMINGO.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SANTO DOMINGO.jpg"
       }
     ]
   },
@@ -2060,10 +1268,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SENSEMBRA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SENSEMBRA.jpg"
       }
     ]
   },
@@ -2072,14 +1276,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SENSUNTEPEQUE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SENSUNTEPEQUE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SENSUNTEPEQUE.jpg"
       }
     ]
   },
@@ -2088,14 +1284,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SESORI.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SESORI.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SESORI.jpg"
       }
     ]
   },
@@ -2104,14 +1292,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SOCIEDAD.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SOCIEDAD.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SOCIEDAD.jpg"
       }
     ]
   },
@@ -2120,14 +1300,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SONSONATE.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SONSONATE.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SONSONATE.jpg"
       }
     ]
   },
@@ -2136,10 +1308,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SONZACATE AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/SONZACATE.jpg"
       }
     ]
   },
@@ -2172,10 +1340,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SUCHITOTO.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/SUCHITOTO.jpg"
       }
     ]
   },
@@ -2192,10 +1356,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/TECAPAN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/TECAPAN.jpg"
       }
     ]
   },
@@ -2204,10 +1364,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/TECOLUCA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/TECOLUCA.jpg"
       }
     ]
   },
@@ -2248,10 +1404,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/TURIN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/TURIN.jpg"
       }
     ]
   },
@@ -2260,18 +1412,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ULUAZAPA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ULUAZAPA.jpg"
-      }
-    ]
-  },
-  { "municipio": "Unicentro Altavista",
-    "encomendistas": [
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/UNICENTRO ALTAVISTA.jpg"
       }
     ]
   },
@@ -2280,14 +1420,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/USULUTAN AGENCIA.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/USULUTAN AGENCIA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/USULUTAN.jpg"
       }
     ]
   },
@@ -2296,10 +1428,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/YAMABAL.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/YAMABAL.jpg"
       }
     ]
   },
@@ -2316,10 +1444,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/YUCUAIQUIN.jpg"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/YUCUAIQUIN.jpg"
       }
     ]
   },
@@ -2328,14 +1452,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/ZACATECOLUCA AGENCIA.png"
-      },
-      {
-        "nombre":"V&G",
-        "imagen": "images/V y G/ZACATECOLUCA.jpg"
-      },
-      {
-        "nombre":"DENYS CAMPOS",
-        "imagen": "images/DENYS_CAMPOS/ZACATECOLUCA.jpg"
       }
     ]
   },
@@ -2343,7 +1459,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/ZARAGOZA.jpg"
+        "imagen": "images/PEDIDOS_EXPRESS/ZARAGOZA AGENCIA.jpg"
       }
     ]
   },
