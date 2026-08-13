@@ -187,7 +187,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/CHAPELTIQUE.jpg"
+        "imagen": "images/PEDIDOS_EXPRESS/CHAPELTIQUE AGENCIA.jpg"
       }
     ]
   },
@@ -467,7 +467,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/GUAZAPA.jpg"
+        "imagen": "images/PEDIDOS_EXPRESS/GUAZAPA AGENCIA.jpg"
       }
     ]
   },
@@ -628,6 +628,14 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/LOURDES AGENCIA.jpg"
+      }
+    ]
+  },
+  { "municipio": "Meanguera",
+    "encomendistas": [
+      {
+        "nombre":"Pedidos Express",
+        "imagen": "images/PEDIDOS_EXPRESS/MEANGUERA.jpg"
       }
     ]
   },
@@ -851,7 +859,7 @@
     "encomendistas": [
       {
         "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/PUERTO DE LA LIBERTAD.jpg"
+        "imagen": "images/PEDIDOS_EXPRESS/PUERTO DE LA LIBERTAD AGENCIA.jpg"
       }
     ]
   },
@@ -1044,14 +1052,6 @@
       {
         "nombre":"Pedidos Express",
         "imagen": "images/PEDIDOS_EXPRESS/SAN LUIS TALPA.jpg"
-      }
-    ]
-  },
-  { "municipio": "San Marcos",
-    "encomendistas": [
-      {
-        "nombre":"Pedidos Express",
-        "imagen": "images/PEDIDOS_EXPRESS/SAN MARCOS.jpg"
       }
     ]
   },
